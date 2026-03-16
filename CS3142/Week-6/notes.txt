@@ -1,0 +1,12 @@
+Reminder: 
+    header files contain function declarations. Declarations do not need to name the params.
+    header files should not include namespace std. 
+
+    # -> "preprofessor directive"
+
+    & -> reference of operator -> attach to variable names -> anything accessing reference will mutate data the
+    reference points to.
+
+Pointer variable -> a variable that stores an address -> declare using the asterisk
+not to be confused with reference variables
+dangling pointers are uninitialized pointers -> causes core dumps, segmentations faults, memor error -> happens runtime.

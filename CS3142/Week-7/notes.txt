@@ -1,0 +1,15 @@
+Difference between basic types and classes:
+byte int float char
+
+Class:
+String
+
+C has no object oriented programming
+
+Pointer variable -> variable that holds an address -> if given a number instead, it will have a compiler error
+
+search ampersand vs pointer
+
+Every object is stored at its address
+
+square bracket on a pointer -> square brackets are a way to dereference a pointer.

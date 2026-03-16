@@ -1,0 +1,4 @@
+Asynchonisity: Javascript runs on a single thread.
+Event: An object triggered by an action.
+e -> event.
+

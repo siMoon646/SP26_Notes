@@ -1,0 +1,29 @@
+
+Learning objectives: 
+Plant care tracking API 
+
+Try week8 section 3 for practice.
+
+some pre req for projec:
+    how to make one's own dataset
+
+mockaroo -> A site to generate datase
+
+postman & thunderclient
+
+
+When harvesting data -> write to seperate file.
+
+Building APIs:
+
+
+index is the first file that the compiler looks for:
+    Can be used to put all your imports into one line
+
+All data should 'flow through' the middleware
+
+lower body of code should handle routes.    
+
+Making POST requests:
+    Headers: what kind of data you are sending to the backend.
+    Body: the contents of the post request

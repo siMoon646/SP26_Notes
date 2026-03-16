@@ -1,0 +1,23 @@
+seperate compilation -> multiple cpp files -> have to compile each of these files individually
+and then link these files together to get an executable.
+
+c++ build model:
+header (.h) + translation units (*.cpp)
+preprocessor performs text subs 
+compiler translates TUs into object files
+linker links object files and external libraries to create an executable
+
+g++ -c main.cpp -> only compiles main 
+g++ -c dbl.cpp -> only compiles dbl
+g++ main.o dbl.o -o output -> links main.o and dbl.o and renames the resulting executable to 'output'
+
+preprocessors have the problem of including the same header file twice
+
+if b.h:
+> includes a.h
+and main:
+> includes b.h AND a.h 
+the problem is that main now has a.h twice.
+
+namespace pollution, when the namespace is applied to everything, sometimes leading to unintended happenings
+

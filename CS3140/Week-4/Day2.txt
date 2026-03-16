@@ -1,0 +1,27 @@
+High order functions (callbacks)
+Modules (separate files)
+
+Modularity -> be pieces.
+
+{ only works in the backend.
+In file 1:
+module.exports(methodName1, methodName2, methodName3, ...);
+
+In file 2:
+const {methodName1, methodName2, methodName3, ...} = require(directory to file 1);
+}
+
+{ works in the frontend
+Imports and Exports:
+}
+
+in JS, an object is scoped by '{' and '}'
+
+Deconstruction: pulling entities out of an object.
+
+"index" - default file name in java that is assumed to be the location of module
+
+Higher order functions:
+like instance methods of the array prototype
+
+Quiz: 4 questions, concept based, pseudocode is fine, closed-notes

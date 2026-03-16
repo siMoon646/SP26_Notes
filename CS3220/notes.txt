@@ -1,0 +1,77 @@
+Deadlock: when processes compete for resources and blocks each other while holding onto a resource that other processes require.
+
+System consists of hardware and software resources used by processes.
+
+Resources can be divided into reusable and consumable -> requested, acquired, later processed and released by relevant process
+
+rescource allocation graph shows the current allocation of resources to processes and the current requests by processes for new resources
+deadlock is possible when there are more than 1 process and more than 1 resource
+
+state transitions:
+    resource request (req r, m) by a process p for m units of a resource r -> creates m edges directed fron p to r
+        may be issued when:
+            1) Process p has no unsatisfiable request and thus is not blocked.
+            2) Number m of request edges + k allocation edges cannot exceed the number of resources in r
+
+    resource acquisition (acq r, m) by a process p for m units of a r reverses the direction of the corresponding request edges to
+    point resources from r to point
+    
+    resource release (rel r, m) operation by a process p of m units of a resource r deleted m allocation edges between p and r
+        may be issued when:
+            1) Process p has no unsatisfiable requests and thus is not blocked
+            2) The number m of units to be releasead must not exceed the total units p in currently holding.
+
+A process is deadlocked in a state s if the process is blocked in s and if no matter what state transitions occur in the future the process remains blocked.
+
+A state is called deadlock state if s contains two or more deadlocked processes
+
+A state is called "safe state" if no SEQUENCE of state transitions exists that would lead from s to a deadlocked state.
+
+Continuous deadlock detection:
+If the current state is not deadlocked, then the next state s' can be blocked if:
+    1) the operation that caused the transition was a request for a resource
+    2) the process p that issued the request is deadlocked in s'
+
+wait-for graph: is a resource allocation graph containing only processes where each prcoess can have multiple incoming resource allocation edges but only one outgoing
+resource request edge.
+
+
+
+Do 5.2.1
+
+Practice exercise 5.1.3
+
+THUR: ----------------------------------------------
+Resource claim graph: is an extension of the general resource allocation graph:
+    shows current allocation of resources to processes
+    all current as well as all potential future requests by processes for new resources.
+
+banker's algorithm:
+    given a resource req in state s, grant the req by changing req edges to allocation edges
+    executre graph reduction alg on the new state s'
+    if the graph of state s' is completely reducible, then accept s' as the new state. Otherwise disallow the acquisition by reverting to state s
+
+Tables can be used to represent the data of a resource allocation graph
+
+Deadlock avoidance with single unit resources:
+    Simplification pf bankers alsgorithm:
+        Given a req edge for state s, temporarily allocate the requested resource
+        Starting with the requesting process p, determine if the graph in temporary state s' contains a directed cycl.
+        if no cycle exists, then accept s' as the new state. Otherwise, reject disallow the acquisition by reverting to state s
+
+finish 5.3.1
+
+Static deadlock detection:
+    Deadlock with reusable resources:
+        hold and wait: a process is already holding one resource and is requesting another resource.
+        circular wait:A process must issue a resource request that closes a cylke involving at least two processes and two resources.
+
+        Eliminating hold and wait:
+            Every process must request all resources needed at the same time.
+            Every process must release all currently needed resources prior to making any new request.
+            A process an be given the ability to test whether a needed resource in currently available.
+
+        Eliminating circular wait:
+            A process p already holding a resource ri with the sequence number seq(ri) may only request reosurce rj where seq(ri) < seq(rj). If all processes follow the rule
+            then circular wait is prevented.
+        

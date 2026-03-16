@@ -1,0 +1,31 @@
+Java: 
+-> Doesn't allow creation of objects without 'new' keyword -> objects can only be created on the heap.
+
+C++:
+-> Objects are created on either the stack or the heap depending on whether or not the 'new' keyword is used:
+    'new' -> on heap
+    no 'new' -> on stack
+        this allows automatic memory management, because once a function is popped off the stack, the object created within that
+        function is also popped off.
+
+Every program starts with the main function, it is automatically called
+and exists on the stack.
+
+Vectors (C++) <-> ArrayList (Java):
+
+members function <-> instance methods
+
+String default constructor creates an object with an empty string.
+
+Recall: you can have operators as member functions of a class -> Strings overload the brackets operator: "Word"[0] = 'W'
+
+Assignment operator (=):
+
+In java: if we have s3 = s1, each are simply pointers to data, so s3 now points to the same Object s1 points to.
+In C++: if we have s3 = s1, s3 copies the data of s1 and you now have 2 objects.
+
+* -> de-referencing
+
+templates <-> generics
+
+indexOutOfBounds <-> out_of_range

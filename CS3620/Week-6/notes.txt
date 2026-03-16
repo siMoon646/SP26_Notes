@@ -1,0 +1,5 @@
+Phong model shading is based on three things:
+1) ambient
+2) diffuse
+3) specular
+

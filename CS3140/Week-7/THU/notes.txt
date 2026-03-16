@@ -1,0 +1,21 @@
+The midterm will be the 30th. Midterm prep on the 25th
+
+personal project due 13th, group project due 11th.
+
+if you want to know more about an API, go look at their documentation
+
+GET requests = CRUD
+C - create
+R - read
+U - update
+D - delete
+
+Some APIs do not want you to edit their data
+
+Morgan: software for logging
+
+postman is an API testing tool -> something you can use if you do not have a frontend.
+
+CORS middleware
+
+curl requests

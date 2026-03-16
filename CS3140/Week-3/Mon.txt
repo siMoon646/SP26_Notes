@@ -1,0 +1,17 @@
+    Into to DOM:
+DOM (Document Object Model):
+> How webpages render and how they respond.
+
+
+use console in webpage to view the document fields/properties
+console.dir(document);
+
+innertext & innerhtml:
+
+Event listeners:
+> 
+
+ArrayLike Objects:
+these suck -> turn into real arrays.
+
+

@@ -1,0 +1,23 @@
+Making a full stack application
+
+Frontend and backend are seperated by folder
+React has a virtual DOM to rerender the original DOM
+There is only one html file
+
+app would usually call all of the children
+propertisc can be passed down trees, never up
+react waits for changes on the virtual dom to change elements -> rerender
+
+prop drilling -> causes a lot of rendering issues
+
+use context -> hooks: useState and useEffect
+
+state management tools (react toolkit)
+
+tan stack: state management
+
+useEffect -> fetching data from the frontend
+
+CORS middleware
+
+

@@ -1,0 +1,10 @@
+You can create your own tags -> custom semantics
+
+Midterms in 3 weeks
+
+Group project structure: E-commerce website.
+
+CRUD - create, read, update, delete
+
+project should have: frontend, API, database
+

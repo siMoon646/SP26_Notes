@@ -1,0 +1,41 @@
+#include <iostream> is for the input and output
+
+namespaces define a scope -> namespace std is the standard namespace -> specifies location of objects.
+
+String, cout, cin -> all defined within standard namespace
+(omitting standard namepsace spec, requires that all objects within the std namespace be pre-fixed with 'std::')
+
+Datatypes:
+1) auto -> let the compiler figure out
+2) double 
+3) bool
+4) char
+5) size_t -> datatype that represents that represents the size of a datastructure -> !< 0
+6) int16/64_t -> 16 bit int or 64 bit int respectively
+
+const (c++) = final (java)
+
+Homogenous contiguous memory
+
+Recall: creating objects with the new keyword will create that object on the heap. C++ allows the creation of
+objects on the stack by omititng the 'new' keyword.
+
+If an array is created on the stack, the size of the array must be known before compile time.
+
+Array elements are unitilialized until you initialize them. If you initialize any element(s), the rest are zeroed/null'd
+
+The compiler needs to know declarations -- that things exist.
+Linker 'ld' wants:
+1) only one main
+2) job: "connect things"
+
+
+Week 3 Day 1: --------------------------------------
+Header files: put method declarations inside here and #include them the main cpp file (include "pathToHeaderFile").
+can put method definition for the declarations in the header files in a separate cpp file.
+
+# - pre-processor directives -> before the compiler reads these, they are replaced with the content of the files they represent.
+
+String class & Vector class -> two most common classes from the standard library.
+
+In java, assignment of objects, is the assignment of references.
