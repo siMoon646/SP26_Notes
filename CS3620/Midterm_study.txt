@@ -1,0 +1,10 @@
+1) What is the primary focus of computer graphics?
+    > To use computers to display graphics.
+
+2) Describe the difference between 2D and 3D graphics.
+    > The difference lies in the possible perspectives offered by each. 3D graphics tend to offer a different viewing angle or depth.
+
+3) Identify the four major areas of computer graphics applications noted in class and provide a brief description and example of each.
+    > Display of information: Digital representation of information translated to a graphic. A computer being used to compute and display a the line of a graph
+
+4) 

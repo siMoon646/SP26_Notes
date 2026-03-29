@@ -35,12 +35,6 @@ If the current state is not deadlocked, then the next state s' can be blocked if
 wait-for graph: is a resource allocation graph containing only processes where each prcoess can have multiple incoming resource allocation edges but only one outgoing
 resource request edge.
 
-
-
-Do 5.2.1
-
-Practice exercise 5.1.3
-
 THUR: ----------------------------------------------
 Resource claim graph: is an extension of the general resource allocation graph:
     shows current allocation of resources to processes
@@ -58,8 +52,6 @@ Deadlock avoidance with single unit resources:
         Given a req edge for state s, temporarily allocate the requested resource
         Starting with the requesting process p, determine if the graph in temporary state s' contains a directed cycl.
         if no cycle exists, then accept s' as the new state. Otherwise, reject disallow the acquisition by reverting to state s
-
-finish 5.3.1
 
 Static deadlock detection:
     Deadlock with reusable resources:

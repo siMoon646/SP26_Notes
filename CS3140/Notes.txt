@@ -1,0 +1,144 @@
+Week 3: ----------
+Intro to DOM (Document Object Model):
+    > How webpages are rendered and how they respond.
+
+Useful tip for debugging:
+    > Printing to the console: console.dir(document)
+    will show you the elements of the document.
+
+
+Week 4: ----------
+Higher order functions <-> callback functions
+    Synonym: instance method
+
+Syntax for importing in the backend:
+    In exporting file: 
+        module.exports{methodName1, methodName2, methodName3, ...} = require{directory to importing file};
+
+Objects: 
+    scoped by '{' and '}'
+
+Deconstruction: pulling entities out of an object.
+
+"index" - default file name in Javascript that is assumed to be the location of module
+
+Week 5: ----------
+Frontend and Backend
+Frontend <-> client side
+Backend <-> server side
+
+Examples of popular backend languages: Java, Python, C++, C#
+Examples of popular frontend languages: CSS, HTML, Node.js, npm
+
+Framework: Pre-built structure of code that provides a foundation for building applications. Gives you a skeleton and you fill in the logic
+    Examples of frameworks include:
+        React
+        Express - A framework for making servers/backends.
+
+Framework vs Library: 
+    Frameworks operate with inversion of control, you are called to fill in logic. Projects are designed around frameworks.
+    Libraries are entirely controlled by the developer, you call on the libraries to solve specific problems.
+
+Information is usually stored in the server (backend).
+
+Middleware: Code that interacts with incoming requests and outgoing responses.
+    Can:
+        1) Inspect or modify the request
+        2) Inspeact or modify the response
+        3) Pass control to the next middleware (next() in express)
+        4) Stop the chain entirely
+
+Node.js: A runtime environment.
+
+How to download express via bash terminal:
+    npm i express
+
+Endpoint:
+    > A specific URL that the server listens on, representing a specific resource that clients can interact with.
+    > The address that clients interact with to get something done.
+
+    Defined by:
+        1) URL Path
+            /users or /products/42
+        2) An HTTP method:
+            GET, POST, PUT, DELETE, PATCH
+
+Async Await Syntax:
+    > Syntax for handling asynchronous operation (things that take time to complete (fetching data from a server, reading a file, querying a database))
+
+    Syntax:
+        Async function function_name(parameter_list){
+            await lines
+            rest_of_code_body...
+        }
+
+Week 6: ----------
+Custom HTML Semantics:
+    You can create your own custom tags
+
+CRUD:
+    Create
+    Read
+    Update 
+    Delete
+
+Week-7: ----------
+Good conventions in web development:
+    Frontend and backend are in seperate folders.
+    Data is held in a seperate file.
+    There in only one HTML file.
+
+More about React framework:
+    > Has virtual DOM to render the origin DOM
+        > virtual DOM - lightweight JavaScript copy of the real DOM
+        > When changes to the frontend are made, the changes are first applied to the virtual DOM, where react will implement the changes in the most 
+        minimal way.This saves compute.
+    > Are single page applications (SPAs)
+        > There is only one HTML file that is dynamically served -> contnets are swapped using JavaScript -> URL might change but the browser never 
+        actually requests a new HTML page.
+    > Built as a component tree:
+        > Root component is commonly referenced, "app"
+        > Root component renders its children, and those children render their children, ...
+        > Data pipeline (of component tree):
+            > Properties can be passed down the tree, never up:
+                > Properties (props) flow from parent to child, if the child needs to contact their parent, the child uses a callback function that 
+                was passed down from parent.
+
+Prop Drilling:
+    > When data is passed down a long sequence of children to reahc its destination
+    > Solved by react's useContext hook.
+
+useContext:
+    > A function, more specifically, a hook.
+    > Lets you share data globally across the component tree without passing props manually at every level.
+
+useState and useEffect:
+    > Functions, hooks.
+    > runs side effects after rendering.
+        > side effects:
+            1) fetching data
+            2) setting up subcriptions
+            3) interacting with external APIs
+
+State management tools:
+    > Used when react hooks like useState and useEffect may be insufficient.
+    > Centralized store that any component can read and write to.
+
+TanStack: (React query)
+    > Handles server state
+
+Middleware:
+    CORS:
+        > When your frontend makes a request to your backend, the browser blocks it for security, CORS is used to explicitly allow these cross-origin
+        requests through
+
+Week 8: ----------
+API Clients / HTTP Clients:
+    > Examples: 
+        > Postman and Thunderclient:
+    > Purpose:
+        > To test backend before the frontend exists.
+    
+Making POST requests:
+    Headers: what kind of data you are sending to the backend.
+    Body: The contents of the post request
